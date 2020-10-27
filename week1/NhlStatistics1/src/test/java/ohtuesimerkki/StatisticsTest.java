@@ -47,18 +47,18 @@ public class StatisticsTest {
     public void correctPlayersBelongingToTeam() {
         List<Player> team = stats.team("EDM");
 
+        assertEquals(3, team.size());
         assertEquals("Semenko", team.get(0).getName());
         assertEquals("Kurri", team.get(1).getName());
         assertEquals("Gretzky", team.get(2).getName());
-        assertEquals(3, team.size());
     }
 
     @Test
     public void correctTopScorers() {
         List<Player> topScorers = stats.topScorers(1);
 
+        assertEquals(2, topScorers.size());
         assertEquals("Gretzky", topScorers.get(0).getName());
         assertEquals("Lemieux", topScorers.get(1).getName());
-        assertEquals(2, topScorers.size());
     }
 }
