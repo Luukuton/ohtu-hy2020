@@ -13,7 +13,8 @@ public class Main {
         Gson mapper = new Gson();
         Player[] players = mapper.fromJson(bodyText, Player[].class);
 
-        System.out.println("Players:");
+        System.out.println("FIN Players");
+        System.out.printf("%-20s %-5s %-3s %-5s %-5s\n", "NAME", "TEAM", "G", "  A", "  SUM");
         for (Player player : players) {
             if (player.getNationality().equals("FIN")) {
                 System.out.println(player);

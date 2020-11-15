@@ -13,6 +13,7 @@ public class Player {
 
     @Override
     public String toString() {
-        return name + " team " + team + " goals " + goals + " assists " + assists;
+        int sum = goals + assists;
+        return String.format("%-20s %-5s %-3s %-5s %-5s", name, team, goals, "+ " + assists, "= " + sum);
     }
 }
