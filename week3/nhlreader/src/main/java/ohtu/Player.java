@@ -1,10 +1,15 @@
 package ohtu;
 
 public class Player {
-    private String name, team;
+    private String name, team, nationality;
     private int goals, assists;
 
-    public Player() {}
+    public Player() {
+    }
+
+    public String getNationality() {
+        return nationality;
+    }
 
     @Override
     public String toString() {

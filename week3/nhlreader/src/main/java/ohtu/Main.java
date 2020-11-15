@@ -10,15 +10,14 @@ public class Main {
 
         String bodyText = Request.Get(url).execute().returnContent().asString();
 
-        System.out.println("json-muotoinen data:");
-        System.out.println(bodyText);
-
         Gson mapper = new Gson();
         Player[] players = mapper.fromJson(bodyText, Player[].class);
 
         System.out.println("Players:");
         for (Player player : players) {
-            System.out.println(player);
+            if (player.getNationality().equals("FIN")) {
+                System.out.println(player);
+            }
         }
     }
 
