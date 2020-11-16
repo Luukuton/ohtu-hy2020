@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>ohtu</OriginalElement>
+  <nodes>
+    <node x="510.0" y="159.0">ohtu.data_access.UserDao</node>
+    <node x="187.0" y="341.0">ohtu.io.ConsoleIO</node>
+    <node x="0.0" y="307.0">ohtu.io.StubIO</node>
+    <node x="577.5833333333334" y="0.0">ohtu.domain.User</node>
+    <node x="633.0" y="329.5">ohtu.data_access.InMemoryUserDao</node>
+    <node x="214.13020833333337" y="159.0">ohtu.io.IO</node>
+    <node x="386.0" y="329.5">ohtu.services.AuthenticationService</node>
+    <node x="324.96354166666663" y="566.0">ohtu.App</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="ohtu.io.ConsoleIO" target="ohtu.io.IO">
+      <point x="0.0" y="-60.5" />
+      <point x="270.5" y="287.0" />
+      <point x="276.75520833333337" y="287.0" />
+      <point x="-20.875" y="49.0" />
+    </edge>
+    <edge source="ohtu.io.StubIO" target="ohtu.io.IO">
+      <point x="0.0" y="-94.5" />
+      <point x="83.5" y="287.0" />
+      <point x="235.00520833333337" y="287.0" />
+      <point x="-62.625" y="49.0" />
+    </edge>
+    <edge source="ohtu.data_access.InMemoryUserDao" target="ohtu.data_access.UserDao">
+      <point x="-67.5" y="-72.0" />
+      <point x="655.5" y="287.0" />
+      <point x="667.5" y="287.0" />
+      <point x="67.5" y="49.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="406.5" y="366.0" />
+  <SelectedNodes>
+    <node>ohtu.data_access.UserDao</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>Production</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
